@@ -13,7 +13,7 @@ Zunächst wurden die relevanten Maße des MuPix8 Senorboards genommen. Hierbei e
 Zur Erstellung des 3D Modells wird die Software Autodesk Inventor verwendet. In dem Programm wird zunächst eine 2D Skizze des Objektes erstellt, beginnend mit einem Rechteck mit den Maßen \SI{199,7}{mm} Länge und \SI{15}{mm} Breite. 
 Nun werden im Abstand von \SI{7}{mm} Einkerbungen in das Rechteck gemacht, wobei an den Enden der Länge nach jeweils mehr Platz gelassen wird, damit die Detektoren nicht so nah am Boden liegen. In diese Einkerbungen werden später die Bleiplatten geschoben. \\
 Aus der 2D Skizze wurde nun ein 3D Objekt gemacht. Man hat nun ein\\ 
-\SI{15}{mm} $\times$ \SI{15}{mm} Quadrat als Basis des Pfostens (Siehe \ref{}). Auf diesen Quadraten wird nun jeweils ein Loch angebracht in welche die Schrauben der Sensoren passen um diese Dort zu bfestigen. Die Abmessungen der Löcher sind \SI{4}{mm} Durchmesser und... %Tiefe konnte ich im Viewer nicht genau nachmessen 
+\SI{15}{mm} $\times$ \SI{15}{mm} Quadrat als Basis des Pfostens (Siehe \ref{Screenshot}). Auf diesen Quadraten wird nun jeweils ein Loch angebracht in welche die Schrauben der Sensoren passen um diese Dort zu bfestigen. Die Abmessungen der Löcher sind \SI{4}{mm} Durchmesser und... %Tiefe konnte ich im Viewer nicht genau nachmessen 
 \\
 Schlussendlich wurde noch eine kleine Einkerbung in Form eines Pfeils in den Pfosten eingefügt, um zu sehen wo die Oberseite ist. 
 
