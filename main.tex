@@ -1,0 +1,63 @@
+\documentclass[12pt,a4paper]{scrartcl} 
+
+\input{imports}
+
+\bibliography{literatur}
+\setcounter{biburllcpenalty}{9000}  %verhindert, dass urls über den Rand gehen
+\setlength{\parindent}{0pt}
+\sisetup{separate-uncertainty}   %Einheiten als Potenz, separate-uncertainty für Fehler mit +/-
+
+\clubpenalty = 10000
+\widowpenalty = 10000 \displaywidowpenalty = 10000
+
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\lhead{\leftmark}
+\cfoot{Universität / Hochschule Name}
+
+% Bibliographiestil
+\bibliographystyle{alpha}
+
+\title{<Titel der Bachelorarbeit>}
+\author{<Autor>}
+\date{<Abgabedatum>}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{Abstrakt}
+\end{abstract}
+
+\tableofcontents
+\newpage
+
+\section{Motivation}
+\input{motivation.tex}
+
+\section{Theoretische Grundlagen}
+\input{theoretische_grundlagen.tex}
+
+\section{Experimenteller Aufbau}
+\input{experimenteller_aufbau.tex}
+
+\section{Durchführung}
+\input{durchfuehrung.tex}
+
+\section{Beobachtungen}
+\input{beobachtungen.tex}
+
+\section{Interpretation und Diskussion}
+\input{interpretation.tex}
+
+\section{Zusammenfassung und Ausblick}
+\input{zusammenfassung_ausblick.tex}
+
+\printglossaries % Glossar und Abkürzungen ausgeben
+
+\bibliography{literatur} % Literaturverzeichnis
+
+\end{document}
