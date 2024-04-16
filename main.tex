@@ -1,16 +1,25 @@
 \documentclass[12pt,a4paper]{scrartcl} 
 
-\input{imports}
+% Präambel entfällt ggf. wenn alles in eigener Doc-Class gesetzt wird
+\usepackage[utf8]{inputenc} % Setzt die Eingabekodierung
+\usepackage[T1]{fontenc} % Setzt die Schriftkodierung
+\usepackage[ngerman]{babel} % Deutsche Spracheinstellungen
 
-\bibliography{literatur}
-\setcounter{biburllcpenalty}{9000}  %verhindert, dass urls über den Rand gehen
-\setlength{\parindent}{0pt}
-\sisetup{separate-uncertainty}   %Einheiten als Potenz, separate-uncertainty für Fehler mit +/-
+\usepackage{graphicx} % Zum Einbinden von Grafiken
+\usepackage{amsmath, amssymb, amsthm} % Mathematik-Pakete
+\usepackage{cite} % Verbessertes Zitieren
+\usepackage{hyperref} % Für Hyperlinks im Dokument
+\usepackage[left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry} % Ränder einstellen
 
-\clubpenalty = 10000
-\widowpenalty = 10000 \displaywidowpenalty = 10000
+% Für die Erstellung eines Glossars oder eines Abkürzungsverzeichnisses
+\usepackage[acronym,toc]{glossaries} 
+\makeglossaries
 
+% Für schönere Tabellen
+\usepackage{booktabs}
 
+% Seitenkopf und Fußzeile konfigurieren
+\usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \rhead{\thepage}
@@ -21,8 +30,8 @@
 \bibliographystyle{alpha}
 
 \title{<Titel der Bachelorarbeit>}
-\author{<Autor>}
-\date{<Abgabedatum>}
+\author{<Jonas Goedert>}
+\date{\today}
 
 \begin{document}
 
