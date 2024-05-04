@@ -15,12 +15,13 @@ Die erste Generation umfasst das Elekktron $e^{-}$ und das Elektron-Neutrino $\n
 \newline 
 Die Bosonen sind die Vermittler der Wechselwirkungen. 
 Bosonen haben einen ganzzahligen Spin und beseitzen, bis auf das W Boson $W\pm$, keine Ladung. 
-So ist das Photon für die Übertragung der elektromagnetischen Wechselwirkungen,das W und Z Boson für die schwache Wechselwirkung und das Gluon für die starke Wechselwirkungen verantwortlich. 
+So ist das Photon für die Übertragung der elektromagnetischen Wechselwirkungen, das W und Z Boson für die schwache Wechselwirkung und das Gluon für die starke Wechselwirkungen verantwortlich. 
 Bei der starken Wechselwirkung kommen die Farbladungen wieder ins Spiel. 
-Die starke Wechselwirkung bindet die Quarks zu Hardonen wie Protonen oder Neutronen, welche wiederum zu den Bayronen zählen zusammen.
-Baryonen bestehen aus drei Quarks, Mesonen, welche auch zu den Hadronen zählen, setzten sich aus einem Quark und dem entsprechenden Anti-Quark zusammen. 
-Sowohl Baryonen als auch Mesonen müssen immer farbneutral sein, man sagt auch sie sind "weiß". 
-Das bedeutet, dass die Quarks welche das jeweilige Teilchen ausmachen, zusammen "weiß" ergeben. 
+Die starke Wechselwirkung bindet die Quarks zu Hardonen wie Protonen oder Neutronen, welche wiederum zu den Bayronen zählen.
+Baryonen bestehen aus drei Quarks. 
+Mesonen, welche auch zu den Hadronen zählen, setzten sich aus einem Quark und dem entsprechenden Anti-Quark zusammen. 
+Sowohl Baryonen als auch Mesonen müssen immer farbneutral sein, man sagt auch sie sind \glqq weiß\grqq . 
+Das bedeutet, dass die Quarks welche das jeweilige Teilchen ausmachen, zusammen \glqq weiß\grqq \ ergeben. 
 Dies erhält man wenn, die drei Quarks jeweils die Farbe rot, grün und blau haben, oder wenn wenn ein Quark mit einer Farbe und das Antiquark mit der entsprechenden Anti-Farbe gebunden sind.
 Man spricht hier auch vom sogenannten Confinement. \\
 Das letzte Boson, das Higgs-Boson, welches nach langer Suche am CERN gefunden wurde, ist jenes Elementarteilchen, was allem seine Masse verleiht. Auch das Higgs-Boson hat keine Ladung aber auch einen Spin von 0.
@@ -64,7 +65,7 @@ Der Fluss von Myonen auf Meereshöhe liegt ca. bei einem Teilchen pro $cm^2/min$
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{images:/grundlagen/muon:kaskade.png}
-    \caption{ Teilchenkaskade der sekundären Höhenstrahlung   \cite{höhenstrahlung}.}
+    \caption{ Teilchenkaskade der sekundären Höhenstrahlung   \cite{zhang2020muography}.}
     \label{fig:höhen_strahlung}
 \end{figure}
 
@@ -95,16 +96,45 @@ Diese Teilchen und Gammastrahlen sind es, die detektiert werden und die Zährate
 Da das Myon, nachem es das erste mal ein einem Kern gestreut wurde, noch einen Großteil seiner Energie hat kommt es zu weiteren solcher Ereignisse. 
 Durchschnittlich streut ein Myon in Blei, bei einer Dicke von \SI{10}{cm} etwa 20 mal \cite{Altameemi2019}.\\
 \newline
-Der schnelle Anstieg setzt sich bis zu einem Maximum fort, dort setzt nun ein langsamerer exponentieller Abfall ein, weshalb das Maximum auch "transition point" genannt wird. 
-Bei Blei liegt dieser Punkt bei ca. \SI{1,5}{cm}, wie in Abb. \ref{fig:rossi_curve} anhand des "extreme fit" zu sehen ist. 
+Der schnelle Anstieg setzt sich bis zu einem Maximum fort, dort setzt nun ein langsamerer exponentieller Abfall ein, weshalb das Maximum auch \glqq transition point\grqq \ genannt wird. 
+Bei Blei liegt dieser Punkt bei ca. \SI{1,5}{cm}, wie in Abb. \ref{fig:rossi_curve} anhand des \glqq extreme fit\grqq\
+ \ zu sehen ist. 
 Der exponentielle Abfall setzt sich dann weiter fort und pendelt sich auf etwa der Hälfte an detektierten Ereignissen vom Maximum ein. 
 
 
-
-
-
-\subsection{Myonen Silizium Interaktion}
-
-
-
 \subsection{HV MAPS Sensor und Auslese}
+
+Der MuPix8 Sensor ist Teil der MuPix Serie, wurde ursprünglich für das Mu3e-Experiment entworfen und nutzt das HV-MAPS Konzept.
+HV-MAPS (High-Voltage Monolithic Active Pixel-Sensoren) sind Halbleitersensoren der COMOS (Complementary Metal-Oxide-Semiconductor) Sensoren. 
+Hier wird positiv dotiertes Silizium, mit einer negativ Dotierten n-Wanne versehen. 
+Durch das Anlegen einer Spannung wird nun eine Raumladungszone erzeugt, in welcher Elektronen-Loch-Paare entstehen, wenn ein Teilchen diese Zone durchquert.
+Aufgrund der angelegten Spannung driften die Elektronen schnell zu der Ausleseeinheit. 
+Vorteil der HV-MAPS ist es, dass hier der aktive Sensorteil und Schaltungselektronik auf einem Chip verbaut werden können, was dazu führt, dass der Chip deutlich dünner ausfällt und Mehrfachstreuungen reduziert werden. \\
+\newline
+Der MuPix8 misst \SI{10,8}{mm} $\times$ \SI{19,5}{mm} und besteht aus 128 Spalten und 200 Reihen. 
+Jedes einzelne Pixel hat die Abmessung \SI{81}{$\mu$m} $\times$ \SI{80}{$\mu$m}.
+Insgesamt weißt der Sensor 25600 Pixel auf.
+Der Sensor ist in  drei Matrizen (A,B und C) unterteilt, welche sich in der Art der Signalübertragung unterscheiden. 
+Matrix A nutzt eine spannungsbasierte Methode, während Matrix B und C eine strombasierte verwenden. 
+Matrix A und B erstrecken sich jeweils über 48 Spalten.
+Demnach sind in Matrix C nur 32 Spalten enthalten. \\
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{images:/grundlagen/MuPix8.png}
+    \caption{ MuPix8 Sensor mit Einteilung in die 3 Untermatrizen und ide Peripherie.  \cite{Augustin2019}}
+    \label{fig:MuPix}
+\end{figure}
+
+Das Auslesesystem des Sensors sammelt, verstärkt und digitalisiert die Signale aus den Pixeln. 
+Trifft ein Teilchen den Sensor, so wird Ladung im Pixel gesammelt und verstärkt. 
+Dieses Signal wird nun in der digitalen Zelle des Pixels digitalisiert.
+Dazu wird das Signal gegen eine, zuvor festgelegte und frei einstellbare, Schwelle verglichen. 
+Übersteigt das Signal den Schwellenwert, so wird ein digitales Signal ausgegeben. 
+All dies geschieht in der Peripherie des Sensors, siehe Abb. \ref{fig:MuPix}.
+Für die zeitliche Erfassung der Signale wird die sogenannte  „Time over Threshold“ (ToT)-Methode verwendet.
+Hier wird jene Zeit gemessen, in welcher das generierte Signal über der zuvor festgelegten Schwelle (engl.threshold) liegt. 
+Dies ist somit ein Maß für die jeweilige Amplitude des Signals. 
+Ein Teilchen mit einer höheren Energie wird also auch eine höhere ToT haben. 
+Ebenfalls wird bei dem MuPix8 jeder Pixel einzeln ausgelesen.
+Das hat den Vorteil, dass es nicht zu Verzerrungen wie dem \glqq Rolling-Shutter-Effekt\grqq \ kommt und diese Methode gleichzeitig schneller ist. 
